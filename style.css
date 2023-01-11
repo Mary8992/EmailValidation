@@ -3,13 +3,66 @@
     padding: 0;
     font-family: "poppin", sans-serif;
 }
-
+/*colorful heart*/
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-color: #373737;
+    overflow: hidden;/*for colorful hearts*/
+    
+}
+
+span {
+    position: absolute;
+    background: url(heart.png);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    animation: animate 2s linear infinite;
+    -webkit-animation: animate 2s linear infinite;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0deg);
+        -webkit-filter: hue-rotate(0deg);
+}
+
+    100% {
+        transform: translate(-50%, -1000%);
+        -webkit-transform: translate(-50%, -1000%);
+        -moz-transform: translate(-50%, -1000%);
+        -ms-transform: translate(-50%, -1000%);
+        -o-transform: translate(-50%, -1000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+        -webkit-filter: hue-rotate(720deg);
+}
+}
+
+/*email validation*/
+
+.validator {
+    z-index: 10000;
 }
 
 h3 {

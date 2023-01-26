@@ -1,3 +1,4 @@
+//colorful heart
 document.addEventListener('mousemove', function(e) {
     let body = document.querySelector('body');
     let heart = document.createElement('span');
@@ -46,3 +47,8 @@ function validation () {
         text.style.color = "#00ff00"
     } 
 }
+
+/*let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3,4}$/;
+
+Use this format for .tech domain... 
+or{2,4}*/

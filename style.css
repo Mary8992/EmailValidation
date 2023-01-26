@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "poppin", sans-serif;
+    font-family: sans-serif;
 }
 /*colorful heart*/
 body {
@@ -90,7 +90,7 @@ h3 {
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
     color: #fff;
-    font-style: 18px;
+    font-size: 18px;
 }
 
 #form .inputBox {
